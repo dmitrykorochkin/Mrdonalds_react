@@ -2,6 +2,7 @@ import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { NavBar } from './components/NavBar';
 
+ 
 const GlobalStyle = createGlobalStyle`
   html{
     box-sizing: border-box;
@@ -17,6 +18,10 @@ const GlobalStyle = createGlobalStyle`
     font-family: Roboto, sans-serif;
     font-size: 20px;
     color:black;
+  }
+  img{
+    max-width:100%;
+    height:auto;
   }
   a {
     text-decoration: none;
@@ -39,15 +44,16 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-function App() {
+export const App = () => {
   return (
-    <>
+    <div className="App">
       <GlobalStyle/>
       <NavBar/>
       
-    </>
+      
+    </div>
 
   );
 }
 
-export default App;
+
