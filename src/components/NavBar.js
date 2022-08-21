@@ -40,6 +40,7 @@ const Button = styled.button`
     color:#fff;
     border:none;
     align-items:center;
+    cursor:pointer;
    
     
 
